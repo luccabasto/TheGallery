@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300&family=Fjalla+One&family=Fugaz+One&family=Gothic+A1:wght@100;200;300&family=Inter:wght@400;700&family=Prompt:wght@100;200;300&display=swap');
+
+
+
+:root {
+    --bg-img: url(../assets/bg-prototype1.png);
+    --font-alpha: 'Gothic A1', sans-serif;
+    --font-beta:;
+    --font-color-alpha: black;
+    --font-color-beta: #ffffff;
+
+    --logo-igm:;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: var(--font-alpha);
+}
+
+html {
+    height: 500vh;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.logo-name {
+    width: 4vh;
+    
+}
+
+header ul{
+    list-style-type: none; 
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: var(--font-color-alpha);
+}
+.impact{
+    height: 100vh;
+    background-image: var(--bg-img);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.impact-frase {
+    font-size: 4em;
+
+}
+.impact-frase span{
+    color: var(--font-color-beta);
+}
