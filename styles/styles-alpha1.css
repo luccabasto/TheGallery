@@ -4,12 +4,11 @@
 
 :root {
     --bg-img: url(../assets/bg-prototype1.png);
+    --bg-color: #D8F0F2;
     --font-alpha: 'Gothic A1', sans-serif;
     --font-beta:;
     --font-color-alpha: black;
     --font-color-beta: #ffffff;
-
-    --logo-igm:;
     
 }
 
@@ -21,6 +20,7 @@
 
 html {
     height: 500vh;
+    background-color: var(--bg-color);
 }
 
 .container {
@@ -39,7 +39,17 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    transition: .5s;
+}
 
+header.rolagem{
+    background-color: var(--bg-color);
+    padding: 20px 4%;
+
+}
+
+header.rolagem a{
+    color: var(--font-color-beta);
 }
 
 .logo-name {
@@ -59,7 +69,20 @@ header ul li{
 header ul li a{
     text-decoration: none;
     color: var(--font-color-alpha);
+    
 }
+
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: var(--bg-color);
+    color: var(--font-color-alpha);
+    cursor: pointer;
+
+}
+
+
 .impact{
     height: 100vh;
     background-image: var(--bg-img);
