@@ -4,36 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Gallery</title>
-    <link rel="stylesheet" href="./styles/styles-alpha1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
     <script src="menu-web.js"></script>
 
 </head>
 <body>
     <header id="header">
-     <div class="container">
 
-        <div class="flex">
-            <a href="#"><img src="/assets/emoji-sunglasses.svg" class="logo-name"></a>
-            <nav>
-                <ul>
-                    <li><a href="#">Academy</a></li>
-                    <li><a href="#">Experiência</a></li>
-                    <li><a href="#">Outros</a></li>
-                  </ul>
-            </nav>
+     <div class="container-nav">
+        <div class="nav__flex">
 
-            <div class="btn-contato">
+            <a href="#"><img src="/assets/emoji-sunglasses.svg" class="nav__logo"></a>
+
+            <nav class="nav">
+
+                <ul class="nav-list">
+                    <li><a href="#sobre" class="nav__item">Sobre mim</a></li>
+                    <li><a href="#" class="nav__item">Cases</a></li>
+                    <li><a href="#" class="nav__item">Formação</a></li>
+                    <li><a href="#" class="nav__item">Experiência</a></li>
+                  </ul> <!--nav-list-->
+            </nav> <!--nav-->
+        <div class="btn-contato">
                 <a href="#"><button>CONTATO</button></a>
-            </div>
+        </div> <!--btn-contato-->
 
-        </div><!--flex-->
+        </div><!--nav__flex-->
 
-     </div><!--container-->
+     </div><!--container-nav-->
     </header>
 
+<section class="main-impact">
+    <h1 class="impact__frase">WELLCOME TO <br/> <!--Fazer com que esse welcome transite de linguas-->
+                            <span>THE GALLERY</span></h1> <!--Estilizar + animação-->
+</section> <!--main-impact-->
 
-<section class="impact">
-    <h1 class="impact-frase">WELLCOME TO <span>THE GALLERY</span></h1>
+<section id="sobre" class="main__about"> 
+    <div class="about__apresentation"> 
+            <container class="apresentation-text__intro"> 
+                <h2 class="apresentation__text-name">Olá sou Lucca Basto,</h2>
+                <h2 class="apresentation__text-dev">sou fullstack <span>em formação.</span></h2>
+                
+                <p class="apresentation__text-about01"> Sou estudante de Analise e Desenvolvimento de Sistema (ADS - FIAP SP) e possuo habilidades em <br/>HTML, CSS, JAVAScript, ReactJS, Bootstrap.</p> <!--apresentation__text-about01-->
+
+            </container> <!--apresentation-text__intro-->
+
+            <container class="apresentation__links" >
+                <a href="https://github.com/luccabasto" target="_blank"><img src="/assets/github.svg" alt="icone do github" class="link__a">
+                </a>
+    
+                <a href="https://www.linkedin.com/in/lucas-basto-440518169/" target="_blank"><img src="/assets/linkedin.svg" alt="icone do linkedin" class="link__a">
+                </a>
+            </container> <!--apresentation__links-->
+
+            <div class="about__img"></div> <!--about__img (minha foto)-->
+
+            <container class="apresentation-text__intro">
+                <p class="apresentation__text-about02"> "Apaixonado por desenvolver projetos e dar vida a ídeias, como desenvolvedor e programador estou sem em busca de aprimorar minhas habilidades e expandir meus horizontes pois o novo é fascinate."</p> <!--apresentation__text-about02-->
+            </container> <!--apresentation-text__intro-->
+
+    </div> <!--about__apresentation-->    
+    <hr>
+</section> <!--main__about-->
+
+<section class="main-cases">
+    <h3>Cases</h3>
+</section> <!--main-practice-->
+<section class="main-formacao">
+    <h3>Formação</h3>
+</section> <!--main-formacao-->
+<section class="main-exp">
+    <h3>Experiência profissional</h3>
 </section>
 
 </body>

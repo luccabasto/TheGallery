@@ -1,0 +1,92 @@
+
+.about__apresentation{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#024d5a, #091813);
+    color: aliceblue;
+
+}
+
+.about__img{
+    background-image: url(/assets/img__testMe.png); 
+    /*Para conseguir manipular a foto, foi necessário importa-la dentro do css*/
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 5px 5px 5px  rgba(242, 231, 79, 1);;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.apresentation-text__intro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentation__text-name{
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+    margin-right: 3em;
+    padding-top: 28px;
+}
+
+.apresentation__text-dev{
+    text-align: right;
+    margin-right: 1.5em;
+    margin-top: 3px;
+}
+
+.apresentation__text-about01{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    word-break: break-word;
+    padding: 1.3em;
+    margin-right: 10px;
+    
+
+}
+.apresentation__text-about02 {
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    word-break: break-word;
+    padding: 0 7px  12px 7px;
+    margin-right: 10px;
+    
+}
+.apresentation__links{
+    display: flex;
+    justify-content: space-evenly;
+    gap:  0 1em;
+
+}
+
+/*.apresentation-img{
+    size: cover;
+    max-width: 220px ;
+    width: auto;
+    height: auto;
+}*/

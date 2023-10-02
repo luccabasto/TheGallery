@@ -1,0 +1,65 @@
+
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    font-family: var(--font-alpha);
+}
+
+header.rolagem{
+    background-color: var(--bg-color);
+    padding: 20px 4%;
+
+}
+
+header.rolagem a{
+    color: var(--font-color-beta);
+}
+
+
+.container-nav {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.nav__flex {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    width: 4vh;
+    
+}
+
+.nav-list{
+    list-style-type: none; 
+}
+
+
+.nav-list li{
+
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.nav__item{
+
+    text-decoration: none;
+    color: var(--font-color-alpha);
+}
+
+
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: var(--bg-color);
+    color: var(--font-color-alpha);
+    cursor: pointer;
+
+}

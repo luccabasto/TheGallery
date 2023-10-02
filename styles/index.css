@@ -1,0 +1,29 @@
+
+@import url(/styles/reset.css);
+@import url(/styles/header.css);
+@import url(/styles/about.css);
+@import url(/styles/impact.css);
+
+
+:root {
+
+    --bg-img: url(../assets/bg-prototype1.png);
+    --bg-color: #D8F0F2;
+    --font-alpha: 'Gothic A1', sans-serif;
+    --font-color-alpha: #000000;
+    --font-color-beta: #ffffff;
+
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html {
+    height: 500vh;
+    background-color: var(--bg-color);
+    font-family: var(--font-alpha);
+    font-size: 16px;
+}
+
